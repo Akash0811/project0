@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Info</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        @media (min-width: 500px) {
+            h1::before {
+                content: "Personal Information!";
+            }
+        }
+        @media (max-width: 499px) {
+            h1::before {
+                content: "Pers. Info.";
+            }
+        }
+        .row > div {
+                padding: 20px;
+                background-color: teal;
+                border: 2px solid black;
+            }
+        #red{
+          color: red
+        }
+    </style>
+    <body>
+      <h1></h1>
+      <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    DOB: 08-11-1994
+                </div>
+                <div class="col-6">
+                    B.Tech in Engineering Physics
+                </div>
+                <div class="col-3">
+                  <p id=red>
+                    Business Analyst
+                  </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

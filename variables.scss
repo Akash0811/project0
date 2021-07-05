@@ -1,0 +1,22 @@
+$color: blue;
+$align: "center";
+
+
+div {
+    font-size: 18px;
+
+    p {
+        color: blue;
+    }
+
+    ul {
+        color: $color;
+        text-align: $align;
+    }
+}
+
+
+h1 {
+  color: $color;
+  text-align: $align;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Webpage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<style>
+            @media print {
+                .screen-only {
+                    display: none;
+                }
+            }
+			      @media (min-width: 500px) {
+                h1::before {
+                    content: "Welcome to My Web Page!";
+                }
+            }
+
+            @media (max-width: 499px) {
+                h1::before {
+                    content: "Welcome!";
+                }
+            }
+            span::before {
+              content: "\1F50D ";
+              font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+      <h1></h1>
+		    <div class="container mt-3">
+		        <h2 class="align-content-center">
+              Hi! This is Akash Biswal
+            </h2>
+		        <img src="photo.jpg" alt="akash" height="200">
+		    </div>
+		    <div class="jumbotron">
+		        <ul class="list-group">
+			           <li><a href="personal.html">Personal Info</a></li>
+			           <li><a href="projects.html">Projects</a></li>
+			           <li><a href="hobbies.html">Hobbies</a></li>
+		        </ul>
+		    <div class="container">
+			      <p>Email: <a href=""> aakashbiswal@gmail.com</a></p>
+			      <p class="screen-only">Search: <span class="glyphicon glyphicon-search" aria-hidden="true"></span> <a href="https://www.google.com">Click Here</a></p>
+		    </div>
+		  </div>
+    </body>
+</html>
